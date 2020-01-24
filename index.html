@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+
+function BuildTriangle(Height,symbol){
+	var area = "";
+	if(symbol.length < 2){
+		for(var i = 1; i <= Height;i++){
+			for( var j = 1; j<=i;j++){
+				area= area + symbol ;
+			}
+		area +="\n";
+	}
+}else{
+	alert("Нужен один символ ввести!!!!")
+}
+		alert(area);
+};
+		BuildTriangle(5,'*');
+		
+
+//--------Второе задание-------//
+			function f(a = 2 ,b = 3,c){
+				function c(a,b){
+					const C_result = a * b;
+					return C_result;
+				}
+
+
+				function sum(a,b){
+					const SumResult = a + b;
+					 return SumResult;
+			
+				}
+				if(arguments.length > 1){
+					if( typeof c == 'function'){
+						return c(a,b);
+					}
+					}else{
+						return sum(a,b);
+					}
+				}
+
+				console.log(f());
+</script>
+</body>
+</html>
